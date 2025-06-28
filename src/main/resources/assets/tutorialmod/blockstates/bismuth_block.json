@@ -1,7 +1,7 @@
 {
-    "variants": {
-      "": {
-        "model": "tutorialmod:block/bismuth_block"
-      }
+  "variants": {
+    "": {
+      "model": "tutorialmod:block/bismuth_block"
     }
+  }
 }
