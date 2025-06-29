@@ -1,6 +1,7 @@
 package net.factoryman99.tutorialmod;
 
 import net.factoryman99.tutorialmod.block.ModBlocks;
+import net.factoryman99.tutorialmod.item.ModCreativeModeTabs;
 import net.factoryman99.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,7 +37,7 @@ public class TutorialMod {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
